@@ -1,0 +1,128 @@
+
+html {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box {
+    width: 400px;
+    max-height: 347px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-top: 60px;
+}
+
+.header {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-item {
+    width: 10px;
+    height: 10px;
+    margin: 0-15px;
+    margin-top: 25px;
+    background-color: #cccc;
+    border-radius: 50px;
+}
+
+.header-item.active {
+    background-color:#333;
+}
+
+.heading {
+    margin: 0;
+    text-align: center;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+.payments {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.payment {
+    border-top: 2px solid #cccc;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.payment-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+}
+.payment:hover {
+    background-color: #cccc;
+}
+
+.active.payment .payment-text {
+    opacity: 1;
+}
+
+.payment-text {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+    background-color:rgb(97, 111, 238);
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.link-img {
+    margin-left: 10px;
+}
+
+
+.link:hover {
+    opacity: 0.9;
+}
+
+.link:active {
+    margin-top: 3px;
+}
